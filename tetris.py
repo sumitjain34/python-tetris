@@ -42,7 +42,7 @@ class Tetris:
 			if key == 27:
 				status = None
 				break
-			elif key in [65,97,68,100,119,87,83,115,32]:
+			elif key in [65,97,68,100,32]:
 				status = self.board.move_figure(self.active_figure,key)
 			if status == False:
 				self.draw_new_figure = True
